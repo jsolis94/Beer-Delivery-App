@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".PaypalActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/screen_14"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="74dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Agregar datos de tu tarjeta de Credito"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/paypaluser"
+            android:layout_width="297dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:hint="Nombre"
+            android:textColorHint="#605E5E"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/paypalpassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/paypalpassword"
+            android:layout_width="297dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:hint="Numero de Tarjeta"
+            android:textColorHint="#605E5E"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+        <EditText
+            android:id="@+id/mes"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="date"
+            android:hint="mes"
+            android:textColorHint="#605E5E"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/año"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="date"
+            android:hint="año"
+            android:textColorHint="#605E5E"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/CVV"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="date"
+            android:hint="CVV"
+            android:textColorHint="#605E5E"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttontarjetapago"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="#FF5722"
+            android:gravity="center"
+            android:text="Pagar via Tarjeta"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:icon="@drawable/tarjeta_icon"
+            app:iconSize="35dp"
+            app:iconTint="#FFFFFF"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="207dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

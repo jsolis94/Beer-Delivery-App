@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".PaypalActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/screen_13"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="107dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Agregar datos de tu cuenta de PayPal"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/paypaluser"
+            android:layout_width="297dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:hint="Correo"
+            android:textColorHint="#605E5E"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/paypalpassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/paypalpassword"
+            android:layout_width="297dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:hint="Contraseña"
+            android:textColorHint="#605E5E"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="141dp" />
+
+        <Button
+            android:id="@+id/buttonpaypalpago"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#1F40ED"
+            android:gravity="center"
+            android:text="Pagar via Paypal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:icon="@drawable/paypal_icon"
+            app:iconSize="35dp"
+            app:iconTint="#FFFFFF"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="207dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

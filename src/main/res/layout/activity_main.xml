@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/splashscreen_drawable"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="259dp"
+        android:layout_height="224dp"
+        android:src="@drawable/beer_delivery_logo" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/beer_delivery_letters" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <ImageView
+        android:layout_width="159dp"
+        android:layout_height="73dp"
+        android:src="@drawable/firebase_logo" />
+
+
+</LinearLayout>

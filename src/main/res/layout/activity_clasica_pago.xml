@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".ClasicaPagoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutview"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/background_alert_view"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="Resumen de tu orden"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/cantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x2"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/linea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_______"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="85dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/subtotaltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtotal"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="140dp"
+                android:textSize="14dp"/>
+
+            <LinearLayout
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/producto"
+                    android:layout_width="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="75dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/botella_clasica"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nombre_producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Victoria Clasica 12 oz\nRetornable"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C$ 36.00"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/primary_color3"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/subtotal2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="C$ 72.00"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/primary_color3"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="140dp"
+                android:textSize="18dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary_color3"
+        android:text="Seleccionar Direccion"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:icon="@drawable/location_logo"
+        app:iconSize="30dp"
+        app:iconTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/tarjetaCreditoButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FF5722"
+        android:gravity="center"
+        android:text="Pagar via Paypal"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:icon="@drawable/tarjeta_icon"
+        app:iconSize="40dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/mapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutview"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <Button
+        android:id="@+id/efectivoButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/primary_color3"
+        android:gravity="center"
+        android:text="Pagar en Efectivo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:icon="@drawable/efectivo_icon"
+        app:iconSize="50dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/mapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutview"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <Button
+        android:id="@+id/paypalButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#1F40ED"
+        android:gravity="center"
+        android:text="Pagar via Paypal"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:icon="@drawable/paypal_icon"
+        app:iconSize="35dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/mapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutview"
+        app:layout_constraintVertical_bias="0.379" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

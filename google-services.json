@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1047885071240",
+    "project_id": "beerdelivery-39f55",
+    "storage_bucket": "beerdelivery-39f55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047885071240:android:745d36875722596f23303d",
+        "android_client_info": {
+          "package_name": "com.chinelaegancho.beerdelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047885071240-1q6901op6155pcklmff5au9si6a14069.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMfNOd-oNdist8OHQRK9f3UOpaRJamjtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047885071240-1q6901op6155pcklmff5au9si6a14069.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
